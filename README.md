@@ -38,7 +38,7 @@ Supervised model performance. (a) A receiver operating characteristic (ROC) plot
 Unsupervised model performance results for the remaining 6 tasks are presented in Table 1.
 
 <p align="center">
-<img src="https://github.com/mohnikbakht/PCG_Shunt_Demo/blob/main/figures/figure5.png" alt="results figure" width="600"/>
+<img src="https://github.com/mohnikbakht/PCG_Shunt_Demo/blob/main/figures/figure5.PNG" alt="results figure" width="600"/>
 </p>
 
  ## Conclusion
