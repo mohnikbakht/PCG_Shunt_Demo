@@ -4,13 +4,6 @@ Congenital heart diseases (CHD) are birth defects that change the heart’s stru
 
 In this work, two deep learning architectures for classifying the auditory characteristics of blood flow through shunts are introduced focusing on six clinically-relevant tasks: (1) shunt type, (2) flow state on Extracorporeal Membrane Oxygenation (ECMO), (3) flow before and after shunt and/pr pulmonary artery angioplasty, (4) cyanosis compared to non-cyanosis, (5) flow over time, and (6) flow state in elevated pulmonary artery pressure. A CNN-LSTM (supervised) was trained and validated for task (1) reaching an F1 score of 0.88 (AUC=0.95). To address the limited sample size of the remaining tasks, a variational autoencoder (VAE) (unsupervised) was trained and validated for dimensionality reduction of the input samples, and its latent vector was used to train support vector machine (SVM), random forest, and a k-nearest neighbors (KNN) models for the remaining downstream tasks. For tasks (1)-(5) we reached AUCs of 0.77, 0.73, 0.86, 0.60, 0.81 respectively. Thus, for the first time to the best of our knowledge, we have demonstrated that the acoustic sounds recorded using a stethoscope from CHD patients contain information about changes in shunt flow.
 
-## Overview
-Overview of the proposed SCG beat denoising model. (a) The noisy SCG beat with a low SNR is fed into the model as input. (b, c) The denoising model suppresses the noise artifacts while maintaining the signal power resulting in an output SCG beat with higher SNR. (d) This higher SNR SCG beat can be used for extracting PEP and LVET features more robustly with higher accuracy. SCG: Seismocardiogram; SNR: Signal to Noise Ratio.
-
-<p align="center">
-<img src="https://github.com/mohnikbakht/Noise2Noise_SCG_Beats_Demo/blob/main/figures/figure1.png" alt="overview figure" width="600"/>
-</p>
-
 ## Architecture 
 
 Overview of the supervised model. (a) an spectrogram image of the heart sound segment as input sample. (b) a CNN-LSTM classifier model to classify the spectrogram sample into shunt type classes. (c) Sano, and mBTTS+DAS as the two major shunt type classes of interest. CNN: Convolutional Neural Network; and LSTM: Long Short-Term Memory.
